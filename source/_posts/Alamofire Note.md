@@ -113,7 +113,7 @@ This framework also provide some func to operate the image like add filter or ch
 - 7-9-2017: 4.5.1, The project to work with Xcode 9 beta 6 on Swift 3.2 and 4.0.
 
 Seems they update very quick and also they merge PR quick often
-![image](/images/Alamofire/1c9e8df8-051b-11e8-85b8-97a81a7dbdfb.png)
+![image](/images/Alamofire/git-issues.png)
 
 ### 4.What are the advantages Alamofire provides over URLSession? 
 #### Alamofire
