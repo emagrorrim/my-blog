@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node app.js",
     "build": "hexo generate",
-    "heroku-postbuild": "hexo generate",
-    "upload": "git push origin master;git push heroku master"
+    "setup": "bundle exec travis setup heroku -f",
+    "heroku-postbuild": "hexo generate"
   },
   "hexo": {
     "version": "3.3.9"
