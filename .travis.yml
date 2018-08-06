@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- 6.10.0
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: AyOgDyulYW3YCC8RJ51vGGwU5/UbFG7bY2nQyPo4JoDxqyDPOY+/6WFktR5c05ErSy/ANQv1QA4WuSu3vtlNxEO4xiP1lWT5/WK/ETw/FoyhakpsSlEvNq8umVv3ilh+5kg3TEk1PQ0hbOLGq2/2VENCA7BOOKCCLaK8ptK8mdLDLxqlHqlWTGfaC7gcnhjcb5xObiltY/pYqKMWhO4wmCg/KGz6PBQdZ8f+CAhGKLuNyY6htv3v3388JzW6iZ1i1cVDn6acIcIZ5BE4CnbPRRZaCXQYgxU2cIcfw9DxiU/p/ctlJs2GzupgfOFY+Ruxe96JnQFyb86V+zIsgc/CRZGygn7kST10J116Rm3HPKd19IfzD8I+runB65V0f7rvC1M7AfbDFOLWc2DpDam4X8rzo5y78veTkjJSDJdSJ1hoWoSvEQJEYqhhSnuW+FV+AlzAu0UrMzFGWsUMaINBxyP+kqSpTPM2V7NZ/Al0rlkWWuJs1iKchx5AntdGr9IySqPLg7h2Hkmsc0rHZcESqn2hjun5bGmTHipt9APARQ6Z+F3ExqdgF0FcEBPW2l1w5sjR0WWiwEdCOfLsbGAvAWBYN8xotOb4oM2R34OY3WT6py/OToXNvZbfp/IKDfibJvERxhVFv/+SkcIa1vYRGQxNopo2y+W0LknGba2OeAY=
+  app: gx-blog
