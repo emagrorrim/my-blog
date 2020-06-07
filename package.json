@@ -9,7 +9,7 @@
     "heroku-postbuild": "hexo generate"
   },
   "hexo": {
-    "version": "3.3.9"
+    "version": "3.9.0"
   },
   "dependencies": {
     "express": "^4.15.4",

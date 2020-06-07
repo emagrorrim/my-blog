@@ -10,6 +10,9 @@ author: Guo Xin
 language: en
 timezone:
 
+github: https://github.com/mrcore
+mail: emagrorrimxguo@gmail.com
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: /
@@ -72,7 +75,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: even 
+theme: anatole-core 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
