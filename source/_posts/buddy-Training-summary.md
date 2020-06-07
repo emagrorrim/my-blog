@@ -3,7 +3,7 @@ title: Buddy Training 总结
 date: 2017-09-24 18:32:25
 tags: ThoughtWorks
 ---
-![BE_A_BUDDY](/images/BE_A_BUDDY.png "BE_A_BUDDY")
+![BE_A_BUDDY](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/BE_A_BUDDY.png "BE_A_BUDDY")
 
 ## 为什么要成为 Buddy
 - 教学相长
@@ -29,7 +29,7 @@ tags: ThoughtWorks
 其中我想重点在于**自己**，不论是持续学习，自愿学习，自我激励，最终都离不开自己认识到学习的重要性，作为一个Buddy，我认为与其给予一个学生大量的任务去“赶鸭子上架”，不如我们让其认识到学习为他带来的好处，同时也要让他明白“被动就要落后，落后就要挨打”。这样他才能够去自主自愿的去学习，并驱动自己进步。
 
 ### 数字化人才
-![Engineering_Business_Design](/images/Engineering_Business_Design.png "Engineering_Business_Design")
+![Engineering_Business_Design](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Engineering_Business_Design.png "Engineering_Business_Design")
 
 数字化人才就是集**设计思维**、**工程实践**、**商业视角**三方面为一体的人才，我们认为，同时具备这三种能力的人才是我们追求的数字化人才，所以对于Buddy的培养，我们也可以从这三个方面入手，但是相对持续自愿的学习，培养这样的能力更为困难。这些能力并非我们给予足够的努力就能够获得的，设计思维，商业视角，有些人穷其一生也难以真正学会，再加上出生人与人的不平等，决定我们对于这三个方面的教授很难形成体系，我认为一方面看人视野，一方面看个人悟性，我们只需要提供环境，教授技能，给予其宽广的视野以及必要的练习，之后新人能够走到哪里，我们只能祝福他们了。
 
@@ -58,7 +58,7 @@ tags: ThoughtWorks
 ### 多辅导
 对于多辅导，我们有一套模型叫做PDCA模型：
 
-![PDCA](/images/PDCA.png "PDCA")
+![PDCA](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/PDCA.png "PDCA")
 
 从图中可见，我们将辅导过程分为四个阶段，**计划** --> **做** --> **检查** --> **制定下次行动** --> **再计划**，其中，学习者与老师应该共同完成除了做以外的阶段，而做应该留给学生，这也符合我们**少教**的原则，我们在计划时按照学生的人生规划帮其指定方向及计划，甚至在其掌握了学习方法，并能够自主学习后，我们连详细的计划都不再指定，而只是指定方向，之后就由学习者自己来学习了。然后是我们应该定期检查一个学习者的成果，快速反馈，制定行动（也有防止学习者松懈的原因在其中），之后再次制定下次计划，或者修改上次的计划来响应学习者在做的过程中的变化（例如学习快的我们可能需要增加计划中的量，学习速度慢的人可以适当放缓，并提出进步策略）。
 
@@ -156,6 +156,6 @@ no 信仰， no 态度， 只针对行为
 
 这里是一个关于JSON的概念图:
 
-![JSON](/images/JSON-cmap.png "JSON")
+![JSON](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/JSON-cmap.png "JSON")
 
 23/09/2017 ThoughtWorks Buddy Training

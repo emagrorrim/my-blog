@@ -3,7 +3,7 @@ title: Swift4.0 Migration
 date: 2017-10-22 14:01:31
 tags: iOS
 ---
-![Swift-4](/images/Swift4-0-Migration/swift-4.png "Swift-4")
+![Swift-4](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/swift-4.png "Swift-4")
 
 最近完成了Swift 4.0的迁移，记录下迁移过程中遇到的坑
 
@@ -24,11 +24,11 @@ Swift 4.0的目标由ABI(Application Binary Interface)稳定，变为了源码�
 
 Swift 3.2，源码兼容，Swift 3.0 几乎不需要修改，只需重新编译，Swift 4.0 与 Swift 3.2 framework支持混编，可见Swift 4.0的兼容性还是比较高的
 
-![Swift-Re-Learn](/images/Swift4-0-Migration/re-learn-the-swift.png "Swift-Re-Learn")
+![Swift-Re-Learn](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/re-learn-the-swift.png "Swift-Re-Learn")
 
 ### Swift 4.0 语法变化简介
 
-![grammar-changes](/images/Swift4-0-Migration/grammar-changes.png "grammar-changes")
+![grammar-changes](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/grammar-changes.png "grammar-changes")
 
 Swift 4.0语法变化还是不少的，但是值得一提的大概是以下四个：
 
@@ -100,7 +100,7 @@ let demo: (Demo & DemoProtocol)?
 
 #### Swift 4.0 Migration 流程
 
-![Swift](/images/Swift4-0-Migration/swift.png "Swift")
+![Swift](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/swift.png "Swift")
 
 #### 环境
 ##### Xcode 9
@@ -113,37 +113,37 @@ Xcode 9是Apple官方推出的IDE，自带Swift 4.0的编译环境。
 
 #### 流程
 
-![migration-process](/images/Swift4-0-Migration/migration-process.png "migration-process")
+![migration-process](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/migration-process.png "migration-process")
 
 迁移流程如上图所示，具体可分为如下几步：
 - 从Build Settings中选择Swift版本
 
-![select-version](/images/Swift4-0-Migration/select-version.png "select-version")
+![select-version](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/select-version.png "select-version")
 
 - 使用内置工具完成迁移 `Edit > Convert > To Current Swift Syntax…`
 
-![convert-to-currect-version](/images/Swift4-0-Migration/convert-to-currect-version.png "convert-to-currect-version")
+![convert-to-currect-version](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/convert-to-currect-version.png "convert-to-currect-version")
 
 - 选择要迁移的Target
 
-![select-target](/images/Swift4-0-Migration/select-target.png "select-target")
+![select-target](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/select-target.png "select-target")
 
 - 选择你希望迁移工具的迁移行为
 
-![select-convertion-mode](/images/Swift4-0-Migration/select-convertion-mode.png "select-convertion-mode")
+![select-convertion-mode](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/select-convertion-mode.png "select-convertion-mode")
 
 - 编译你的代码
 
 之后编译你的代码，你会看到如下图所示的警告，将其对应的方法添加`@objc`即可
-![objc-warning](/images/Swift4-0-Migration/objc-warning.png "objc-warning")
+![objc-warning](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/objc-warning.png "objc-warning")
 
 - 在Build Settings中将`Swift 3 @objc Inference`设置为 Default
 
-![swift-3-objc-inference](/images/Swift4-0-Migration/swift-3-objc-inference.png "swift-3-objc-inference")
+![swift-3-objc-inference](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/swift-3-objc-inference.png "swift-3-objc-inference")
 
 ### Swift 4.0 迁移过程中遇到的问题
 
-![questions](/images/Swift4-0-Migration/questions.png "questions")
+![questions](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/questions.png "questions")
 
 #### @objc 带来的“坑”
 虽然90%的`@objc`都会在编译期间被检查出来，但是仍然有一些我们无法在编译检查出来，就是运行时的错误。
@@ -162,7 +162,7 @@ if ([controller respondsToSelector:@selector(method_name)])
 #### Cocoapods Swift3， Swift4 版本混编的问题
 前文我们提到了Swift这个版本的源码兼容性很高，且支持Swift3.2和Swift4.0 framework的混编，然而...
 
-![problems](/images/Swift4-0-Migration/problems.png "problems")
+![problems](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Swift4-0-Migration/problems.png "problems")
 
 我们会发现当我们将项目的Swift版本改为4.0之后，我们所有Cocoapods安装的依赖的Swift版本也变为了4.0，这导致我们完全浪费了Apple的Swift3.2和4.0 framework混编的优势，导致我们不得不等待我们所有依赖的库升级到Swift4.0之后才能升级我们自己的Target到Swift4.0，或者不得不用一个私有的Pod Module自己升级，增加了许多不必要的工作量，这里给大家分享一下我们项目上的解决方案。
 

@@ -1,5 +1,5 @@
 # Alamofire Note
-![](/images/Alamofire/15322346652322.png)
+![](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Alamofire/15322346652322.png)
 ## Overview
 - Category
 - Language
@@ -13,7 +13,7 @@
 Networking framework
 
 ## Language
-<img src="/images/Alamofire/15322376597183.png" width=200px />
+<img src="https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Alamofire/15322376597183.png" width=200px />
 
 ## Positioning
 **Tool rather than component**
@@ -162,4 +162,3 @@ Disadvantage:
 It's almost same with previous one, just we are not going to implement image caching by Alamofire, we using another framework called `KingFisher` which is quite similar to `SDWebImage`, here is the Github URL: https://github.com/onevcat/Kingfisher
 
 ### URLSession + implement image caching by ourselves(Not Recommended)
-
