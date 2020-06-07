@@ -21,17 +21,13 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
         
     - name: Deploy to Heroku
       uses: AkhileshNS/heroku-deploy@v3.0.4
       with:
         # This will be used for authentication. You can find it in your heroku homepage account settings
-        heroku_api_key: 903eeb0c-65d5-48c9-a42e-ee82fcac5002
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
         # Email that you use with heroku
-        heroku_email: emagrorrimxguo@gmail.com
+        heroku_email: ${{ secrets.HEROKU_EMAIL }}
         # The appname to use for deploying/updating
-        heroku_app_name: gx-blog
+        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
