@@ -82,7 +82,9 @@ Alamofire.request("https://httpbin.org/image/png").responseImage { response in
   }
 }
 ```
+
 **Cache**
+
 `AutoPurgingImageCache` is only a memory cache, `ImageDownloader` can save to disk, the api name is same with `UIKit+AFNetworking`, but it still need a wrapper, we can not use this directly in OC
 
 ```swift
@@ -117,6 +119,7 @@ Seems they update very quick and also they merge PR quick often
 
 ### 4.What are the advantages Alamofire provides over URLSession? 
 #### Alamofire
+
 Advantage:
 
 - Support image cache
@@ -130,6 +133,7 @@ Disadvantage:
 - Has duplicated `Result` enum
 
 #### URLSession
+
 Advantage:
 
 - Designed by Apple, so we don't need care about updating
@@ -144,17 +148,24 @@ Disadvantage:
 
 ## Now I have following options
 ### Alamofire + AlamofireImage (Recommended)
-#### Good
+
+#### Pros
+
 - Using Alamofire and AlamofireImage, which should be the easiest way to do this, we don't need care about the network itself, we can use them replace AFNetworking directly.
 - Alamofire Github is activity
-#### Bad
+
+#### Cons
+
 - Third-part Framework still has risk we need change it in the future.
 
 ### URLSession + Alamofire + AlamofireImage
-#### Good
+#### Pros
+
 - Using URLSession to implementation network layer, extracting image caching out of the main project, then use Alamofire and AlamofireImage to implement image caching. So we can control the implementation.
 - We don't need to care about OC compatibility or new swift version release
-#### Bad
+
+#### Cons
+
 - We need a module only for image caching
 - We need to implement get, post method by ourselves
 
