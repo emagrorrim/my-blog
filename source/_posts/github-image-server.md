@@ -4,7 +4,7 @@ date: 2020-04-20 14:01:31
 tags: Tools
 ---
 
-![Hero](https://github.com/emagrorrim/static-images/blob/master/images/v1/gift.jpg?raw=true)
+<img src="https://github.com/emagrorrim/static-images/blob/master/images/v1/gift.jpg?raw=true" width=100% />
 
 平时写Markdown的时候，我们常常需要面对一个问题，就是当我们想要展示一张图片的时候，我们需要提供一个图片的URL，如下：
 
@@ -18,7 +18,7 @@ tags: Tools
 
 ### Github Image Server
 
-![Github](https://github.com/emagrorrim/static-images/blob/master/images/v1/github.png?raw=true)
+<img src="https://github.com/emagrorrim/static-images/blob/master/images/v1/github.png?raw=true" width=100% alt="Github"/>
 
 作为我们的代码版本管理工具，其本身也有存贮的功能，平时我们的项目中也常常有一些静态图片存到Github上。而且对于每张图片，github都会提供一个单独的URL来引用这张图片，这时我们使用这张图片便能轻松通过一个固定的URL来访问。而当你复制这篇文章的时候，你也不需要担心图片丢失了。
 
