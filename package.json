@@ -1,9 +1,9 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "gx-blog",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "hexo generate;hexo server -p $PORT",
+    "start": "hexo clean && hexo generate && hexo server -p $PORT",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
