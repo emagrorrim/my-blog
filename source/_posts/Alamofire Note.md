@@ -1,4 +1,3 @@
-# Alamofire Note
 ![](https://raw.githubusercontent.com/emagrorrim/static-images/master/images/v1/Alamofire/15322346652322.png)
 ## Overview
 - Category
